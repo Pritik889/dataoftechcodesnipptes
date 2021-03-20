@@ -17,8 +17,8 @@ namespace Test
                     sftpClient.Connect();
                     sftpClient.DeleteFile("./variables.txt");
                     sftpClient.Create("./variables.txt");
-                    sftpClient.ReadAllText("./variables.txt");
                     sftpClient.WriteAllText("./variables.txt", "testwrite");
+                    sftpClient.ReadAllText("./variables.txt");
                     sftpClient.Disconnect();
                 }
                 catch (Exception e)
